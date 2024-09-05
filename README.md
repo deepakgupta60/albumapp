@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+<!-- // // Utility function..
+// // For Each
+// // Then 
+// // Catch
+// // hasOwn Property
+// // const num = [3,452,4,2];
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+for(let i=1;i<=10;i++)
+  {
+    console.log(`${i}*${i}`)
+  }
 
-In the project directory, you can run:
+// // num.forEach((item,index, aretr)=>{
+// //   arr[index]=item*10
+// // })
 
-### `npm start`
+// // console.log(num)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+// // EXAMPLE ONE 
+// // const isCashAvailable = false;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+// // const atmPromise = new Promise(function(resolve, reject){
+// //   if(isCashAvailable)
+// //     {
+// //       let response = {
+// //         message:"Cash widthdraw"
+// //       }
+// //       // return "Widthraw cash from bank"
+// //       // return respconsole.log("Best of luck of the next time");
+// //       resolve(response)
+// //     }
+// //   else
+// //     {
+// //       let response = {
+// //         message:"Cash not widthdrawl"
+// //       }
+// //       reject(response)
+// //     }
+// // })
 
-### `npm test`
+// // atmPromise.catch(function(successMsg){
+// //   console.log(successMsg.message)
+// // }).then(function(failMsg){
+// //   // throw new Error(failMsg)
+// //   console.log(failMsg.message) // use custom error like this..
+// // }).finally(function(){
+// //   throw new Error("Finally worked")
+// // })
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// // EXAMPLE TWO
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+// // const score = 50;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+// // const gradePromise = new Promise(function(pass, fail){
+// //   if(score>80){
+// //     const result = {
+// //       message:"Pass with Grade A"
+// //     }
+// //     pass(result)
+// //   }
+// //   else if(score<=80 && score>60)
+// //     {
+// //       const result ={
+// //         message: "Pass with Grade B"
+// //       }
+// //       pass(result)
+// //     }
+// //   else if(score<=60 && score>40)
+// //     {
+// //       const result={
+// //         message:"Pass with Grade C"
+// //       }
+// //       pass(result)
+// //     }
+// //   else
+// //     {
+// //       const result={
+// //         message:"Fail with Grade D"
+// //       }
+// //       fail(result)
+// //     }
+// // })
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+// // gradePromise.then(function(passData){
+// //   console.log(passData.message)
+// // }).catch(function(failData){
+// //   console.log(failData.message)
+// // }).finally(function(){
+// //   if(score<=40)
+// //     {
+// //       console.log("Best of luck of the next time")
+// //     }
+// //   else
+// //     {
+// //       console.log("Wow Congratulations :) ")
+// //     }
+  
+// // })
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+// // what is fetch
+// // modern and powerful way to make a network request. it allows you to request resources, data from api or file. handle the response asynchronously using promises.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+// // Fetch is promise which help is to capture data from external resources using endpoint.
+// // fetch > create promise > promise process.. 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+// // Promise declaration
+// function fetchData()
+// {
+//   // const rawData=[]
+//   const postPromise = fetch('https://jsonplaceholder.typicode.com/posts')
+// const postData = []
+// // How to handle promise
+// postPromise.then(function(rawJson){
+//   // console.log(rawJson.json())
+//   // second then is convert data into json format
+  
+//   // 1. first promise is get the data
+//   // 2. second promise is convert the data into json format..
+  
+//   // how many ways to fetch the data
+//   // best and one way that is fetch
+  
+// //   rawJson.json().then(function(data){
+// //     // postData=data
+// //     console.log(data.title)
+// //     // document.getElementById("output").innerText=JSON.stringify(postData, null,2)
+// //   })
+// // }).catch(function(errMsg){
+// //   console.log(errMsg)
+// // })
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+// // }
 
-### Code Splitting
+// // fetchData()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+// // <html>
+// // </html>
 
-### Analyzing the Bundle Size
+// // console.log(...postData)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ -->
+
+
+
+
+
+
+******* under the hood, we still using .then and .catch.- -- abstractions..
+
+callback hell
+promise hell - this is also exist..
+thats why introduce the async and await..
+
+real world = you make a promise ..
+
+promise -> promise is not sure, it can happen in future, deal in asynchronous in nature, 
+mayank make promise it would be
+

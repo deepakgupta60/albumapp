@@ -3,6 +3,7 @@ import FCuser from "./FCuser";
 import Album from "./Album";
 import { Routes,Route } from "react-router-dom";
 import Photos from "./Photos";
+import ApiCall from "./ApiCall";
 
 
 const App = ()=>{
@@ -17,10 +18,12 @@ const App = ()=>{
   return(
     <>
 
-<Routes>
+{/* <Routes>
   <Route path="/" element={<Album/>}/>
   <Route path="/photos/:id" element={<Photos/>}/>
-</Routes>
+</Routes> */}
+
+<ApiCall/>
     {/* <Album/> */}
 
     {/* <input type="text" ref={inputRef} /> */}
