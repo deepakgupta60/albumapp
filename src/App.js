@@ -1,21 +1,36 @@
 import { useState } from "react";
 import A from "./component/A";
 import B from "./component/B";
-
+import C from "./component/C";
+import D from "./component/D";
 const App = ()=>{
   
-  let [val, setVal]=useState();
-  let [text, setText]=useState();
+  const [users, setusers]=useState([]);
+  const [comment, setComment]=useState([]);
+  // let [valA, setValueA]=useState([]);
+  
+  // const getApiA=({apiDataA})=>{
+  //   return setValueA(apiDataA)
+  // }
+  
 
-  const getValue = (valueA,text)=>{
-    setVal(valueA)
-    setText(text)
+  function updateUsers(users)
+  {
+    setusers(users)
   }
+  function updateComment(comment)
+  {
+    setComment(comment)
+  }
+  // console.log(users)
   return(
     <>
-    <A getValue={getValue}/>
-    <B val={val} text={text} />
+    {/* <A getApiA={getApiA} /> */}
+    {/* <C valA={valA}/> */}
 
+    <A updateUsers={updateUsers} />
+    <B updateComment={updateComment} />
+    <C users={users}  comment={comment}/>
     </>
   )
 }

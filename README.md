@@ -366,3 +366,6 @@ if one promise return the reject error so other is not called.. that is the solu
 .all > through get the all resolve promises.
 
 .any > take care of all rejected promises.
+
+
+#### Lifting state up
