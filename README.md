@@ -374,10 +374,33 @@ entire the all jsx element in one root element wrap
 
 Fragements only understand by react library -- avoid unnecesery addion of dom
 
+### MUI ###
+
+don't memorize the all thing, only have the few things, just keep in mind, because of lot more available in the market, so don't need, just go to the documentation section and read all the things.. that you need and just read and implement.. 
+
+--> once copy and then go to the --> API section that is available prop on it..
+
+if you want to change then it might be in the theme..
+
+sx -> denotes the style object > means you can write css over there.. emotion style to get sx
+
+sx={{backgroundColor:"red"}} -> to change the style using sx props..
 
 
+Box-> similar to a div >> API section get a props where you can use properly..
+
+foundation ui, semantic ui, tailwind css
 
 
+//  Fragement component.. 
+// useCallback() -> every  component function gets recreated..
+
+// change in prop it gets recreate the component.. and its re render..
+
+// don't memorize any of the thing.. with the help of documentations..
+// read the documentations, sx property of the css to override the styles..
+
+// Javascript.. lack a confidence.. > really need to get a job.. atleast 70%, only comes after that..
 
 
 
@@ -385,6 +408,7 @@ Fragements only understand by react library -- avoid unnecesery addion of dom
 
 
 #### Parallel API Calls in js
+
 
 1, 2, 3 parallel api calls, all are trigger.
 

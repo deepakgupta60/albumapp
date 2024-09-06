@@ -1,7 +1,9 @@
 import { useState } from "react";
-import Callback from "./debouncing/Callback";
-import Debounce from "./debouncing/Debounce";
+// import Callback from "./debouncing/Callback";
+// import Debounce from "./debouncing/Debounce";
+// import Navbar from "./Navbar";
 
+import Album from "./Album";
 const App = ()=>{
   
   // const originalArray =[1,2,3,4,{a:3}];
@@ -13,7 +15,10 @@ const App = ()=>{
 
   return(<>
 
-    <Callback/>
+    <Album/>
+  {/* <Navbar/> */}
+
+    {/* <Callback/> */}
     {/* <Debounce/> */}
 
   </>)
