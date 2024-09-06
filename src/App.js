@@ -1,9 +1,14 @@
+import { useState } from "react";
+import Callback from "./debouncing/Callback";
 import Debounce from "./debouncing/Debounce";
 
 const App = ()=>{
+  
+
   return(<>
 
-    <Debounce/>
+    <Callback/>
+    {/* <Debounce/> */}
 
   </>)
 }
