@@ -1,40 +1,52 @@
-import { useState } from "react";
-import A from "./component/A";
-import B from "./component/B";
-import C from "./component/C";
-import D from "./component/D";
+import Debounce from "./debouncing/Debounce";
+
 const App = ()=>{
-  
-  const [users, setusers]=useState([]);
-  const [comment, setComment]=useState([]);
-  // let [valA, setValueA]=useState([]);
-  
-  // const getApiA=({apiDataA})=>{
-  //   return setValueA(apiDataA)
-  // }
-  
+  return(<>
 
-  function updateUsers(users)
-  {
-    setusers(users)
-  }
-  function updateComment(comment)
-  {
-    setComment(comment)
-  }
-  // console.log(users)
-  return(
-    <>
-    {/* <A getApiA={getApiA} /> */}
-    {/* <C valA={valA}/> */}
+    <Debounce/>
 
-    <A updateUsers={updateUsers} />
-    <B updateComment={updateComment} />
-    <C users={users}  comment={comment}/>
-    </>
-  )
+  </>)
 }
+
 export default App;
+
+// import { useState } from "react";
+// import A from "./component/A";
+// import B from "./component/B";
+// import C from "./component/C";
+// import D from "./component/D";
+// const App = ()=>{
+  
+//   const [users, setusers]=useState([]);
+//   const [comment, setComment]=useState([]);
+//   // let [valA, setValueA]=useState([]);
+  
+//   // const getApiA=({apiDataA})=>{
+//   //   return setValueA(apiDataA)
+//   // }
+  
+
+//   function updateUsers(users)
+//   {
+//     setusers(users)
+//   }
+//   function updateComment(comment)
+//   {
+//     setComment(comment)
+//   }
+//   // console.log(users)
+//   return(
+//     <>
+//     {/* <A getApiA={getApiA} /> */}
+//     {/* <C valA={valA}/> */}
+
+//     <A updateUsers={updateUsers} />
+//     <B updateComment={updateComment} />
+//     <C users={users}  comment={comment}/>
+//     </>
+//   )
+// }
+// export default App;
 
 
 

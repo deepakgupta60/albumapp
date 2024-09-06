@@ -357,6 +357,33 @@ mayank make promise it would be
 
 
 
+#### Session 8 ####
+Agenda 
+1) Browsers - 
+2) Memory Router - 
+3) Hash Router - 
+
+
+hooks 
+containes 
+with lot more funcionality..
+
+cannot have a multiple root.
+
+entire the all jsx element in one root element wrap
+
+Fragements only understand by react library -- avoid unnecesery addion of dom
+
+
+
+
+
+
+
+
+
+
+
 #### Parallel API Calls in js
 
 1, 2, 3 parallel api calls, all are trigger.
@@ -369,3 +396,7 @@ if one promise return the reject error so other is not called.. that is the solu
 
 
 #### Lifting state up
+
+
+### Debouncing
+
