@@ -402,9 +402,37 @@ foundation ui, semantic ui, tailwind css
 
 // Javascript.. lack a confidence.. > really need to get a job.. atleast 70%, only comes after that..
 
+##### REDUX -- State Management
+
+*** // react redux:
+this is not in slide, but try to learn redux..
+
+Prior to teach
+> React Redux: Most important topic in interview..
+/// what is redux and what is react redux.., how to use redux..
+
+sharing data across the component >> that is props but comes a prop drilling, so that use useContext() for state management..
+what is the working of props.. principle behind props.. how is it used..
+
+what is the principle behind props... how is the data exchange, can u explain..
+parent and child relation.. should have relationship like a parent and child..
+lifting up props.. if share from a to b, so need a common in between like a app.js so pass from a to app, and then app to b.. lifting up props.. when scalling the application, you need to know about share the data across the network, or a global..
+
+React Context: > without having a parents and child relation.. other one is redux architecture.. manage the all your data in centre place.. one component to another component..  that common area called a store..exchange data from one component to another component..without following the parent child relationship
 
 
+d1 -> 
+d2 ->
+d3 ->
+d4 ->
 
+
+how to store it and how to share it in different component..kept all the data in central place..
+
+distributing the data to all other, if they are listning to particular storage., state management... how to store it, and how to manage it.
+
+
+some component inside the redux is uses to work the redux
 
 
 #### Parallel API Calls in js
