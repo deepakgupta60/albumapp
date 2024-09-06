@@ -4,6 +4,12 @@ import Debounce from "./debouncing/Debounce";
 
 const App = ()=>{
   
+  // const originalArray =[1,2,3,4,{a:3}];
+  // const shallowCopy = [...originalArray]
+  // originalArray[0]=20
+
+  // console.log("Shallow copy not original one copied: ",shallowCopy);
+  // console.log("Original One: ",originalArray);
 
   return(<>
 
