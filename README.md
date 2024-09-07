@@ -557,3 +557,14 @@ if one promise return the reject error so other is not called.. that is the solu
 
 ### Debouncing
 
+
+
+### Interview Questions #### Session 11
+
+
+Javascript 75% remaining 25%
+
+when u preparing for the react interview you actually need to prepare the javascript interview..
+
+- async await, promises, react, 
+- 

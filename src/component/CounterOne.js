@@ -5,7 +5,7 @@ import { decrementCount, incrementCount } from "../store/action";
 
 
 const CounterOne=()=>{
-   const count = useSelector((state)=>state.counterReducer.count);    
+   const count = useSelector((state)=>state.counterReducer.count);     // use selector is hook to read a data from a hook, 
    const dispatch = useDispatch();
    
    
