@@ -433,6 +433,111 @@ distributing the data to all other, if they are listning to particular storage.,
 
 
 some component inside the redux is uses to work the redux
+-- fundamentals blocks inside the redux, which make the storage management system works..
+1) State -> what is
+
+it is an object.. which store the data, when u want to share across difference component..
+
+STATE - > put the data
+
+{
+  name:'',
+  age:'',
+  isLoading:'',
+
+}
+
+what need its store in state..
+
+REDUCERS -> which helps to manipulate the data
+which blog is manipulate the data and add the data. 
+-> update, add and delete the state object...
+
+there is a way to communicate with the state.
+
+every reducers functions receive two things..
+1) previous state / inital state
+2) type -- like counter-- increment, type can be like a decrement the operation... which kind of operation should i apply.. -- which kind of operation should i apply., it takes the correct processing method.. it take read so it read, if delete then it delete, when it update, then it update, 
+
+2 types > increment > count+1 or decrement > count-1
+
+for example
+states
+{
+  count:0 > when it will update then check a type, whether is increment or decrement, 
+}
+
+how to invoke the reducer functions.. now need a Actions..
+
+ACTION is one who is responsible for triggering the functions..
+
+-- which passes the types.. that reducer required.
+
+2 types of action.
+1) increment count
+2) decrement count
+
+
+1) suppose if check if fine it will count+1, and store back to the state..
+2) action is a function will trigger to a function..
+
+state reducer and actions..
+
+action are a normal function which help you to invoke or trigger a reducer function, how do you do that... by passing the correct type of action. trigger the reducer of particular tag..
+
+State + Reducer + Action.
+
+Action are basically a normal function which invoke or trigger a reducer functions..
+
+
+React team took redux and merge with react, that is why we are say to a react redux
+
+how can i trigger action and reducer..
+
+
+what is speciality of that.. how can i trigger the action and reducers..
+
+dispatch() an action that, if action get trigger, reducer get trigger.
+
+call the dispatch function > it invoke or dispatch a particular function.
+
+to the action.. 
+
+STATE > ACTION > REDUCER
+
+
+Recap: read, modify, any where component are connected with the main storage.
+
+1) State -> object which contains all the data that is neccessery, 
+2) Reducer > if you have to manipulate the data, if you have to be reducer, reducer base on basis of type > 
+3) Actions > actions are trigger by dispatch, action responsiblity is pass the type correctly.
+
+
+
+folders..
+store folder > where to put store the all of the data. store basically a folder.
+state.js > 
+reducer.js > 
+actions.js >
+
+how do we combine of these... how do we make to work together.
+
+we need to create a store, 
+
+
+
+
+
+
+
+Reducers > 
+
+
+central storage which adds the data, and which storage the data.
+
+2) Reducer -> what is
+
+3) Actions -> what is
 
 
 #### Parallel API Calls in js
